@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портфолио Ивана Бояркина</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    body, header {
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .logo {
+      width: 50px; /* Установите ширину и высоту логотипа по необходимости */
+      vertical-align: middle;
+    }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #322f33;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .block {
+    flex: 0 0 30%; /* Ширина блоков */
+    padding: 20px;
+    margin: 10px;
+    background-color: #7f7c80;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  .block:hover {
+    transform: scale(1.05);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+</style>
+</head>
+<header>
+    <img class="logo" src="ico/logo.png" alt="Логотип">
+    <div class="title">
+      <h1>Мое портфолио</h1>
+    </div>
+  </header>
+  
+<body>
+<div class="block">
+  <img src="img/your_photo.jpg" alt="Ваше Фото">
+  <h2>Информация обо мне</h2>
+  <p>Всем привет, меня зовут Бояркин Иван,  я обучаюсь в Амурском Педагогическом Колледже №3 на третьем курсе, обучаюсь я на специальности "Информационные системы програмирование", увлекаюсь компьютерными играми, Волейболом, так же сейчас активно изучаю многие языки програмирования</p>
+</div>
+
+<div class="block">
+    <h2>Языки программирования</h2>
+    <i class="fab fa-html5 fa-3x"></i> <!-- Пример значка для HTML -->
+    <i class="fab fa-css3 fa-3x"></i> <!-- Пример значка для CSS -->
+    <i class="fab fa-js fa-3x"></i> <!-- Пример значка для JavaScript -->
+    <i class="fab fa-python fa-3x"></i> <!-- Пример значка для Python -->
+    <i class="fab fa-java fa-3x"></i> <!-- Пример значка для Java -->
+    <p>Изучаю Python, C++, JavaScript и HTML. У каждого свои преимущества: Python — прост и эффективен, C++ — для высокой производительности, JavaScript — для веб-разработки, HTML — для структурирования веб-страниц. Нравится разнообразие и возможности, которые они открывают.
+        Изучая Python, C++, JavaScript и HTML, особенно меня привлекает возможность творчества и экспериментов. Каждый из этих языков предоставляет уникальные инструменты и подходы к решению задач. Но больше всего меня вдохновляет возможность создавать что-то новое и удивительное, открывая двери к бесконечным возможностям в мире программирования.</p>  
+</div>
+
+<div class="block">
+  <h2>Мои грамоты</h2>
+  <img src="ico/folder_icon.jpg" id="folder" onclick="toggleFolder()">
+  <div id="certificates" style="display: none;">
+    <h2>2 курс</h2>
+    <img src="img/certificate1.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <img src="img/certificate2.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <img src="img/certificate3.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <img src="img/certificate4.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <img src="img/certificate5.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <img src="img/certificate6.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <img src="img/certificate7.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <h2>3 курс</h2>
+    <img src="img/9.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <img src="img/0.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <img src="img/10.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <img src="img/11.jpg" class="photo" onclick="toggleFullScreen(this)">
+    <img src="img/12.jpg" class="photo" onclick="toggleFullScreen(this)">
+  </div>
+</div>
+
+<div class="block">
+  <h2>Связь со мной</h2>
+  <a href="https://vk.com/boya5" target="_blank"><i class="fab fa-vk fa-3x"></i></a> <!-- Ссылка на ВК -->
+  <a href="tel:+79241487602"><i class="fas fa-phone-square fa-3x"></i></a> <!-- Номер телефона -->
+  <a href="mailto:maks.20app@mail.ru" target="_blank">
+    <i class="far fa-envelope fa-3x"></i> <!-- Иконка для почты -->
+</div>
+</div>
+
+<script>
+function toggleFolder() {
+  var folder = document.getElementById("certificates");
+  if (folder.style.display === "none") {
+    folder.style.display = "block";
+  } else {
+    folder.style.display = "none";
+  }
+}
+
+function toggleFullScreen(element) {
+  // Ваша функция для увеличения фотографии
+}
+</script>
+</body>
+</html>
+
+
